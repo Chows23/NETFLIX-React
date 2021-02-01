@@ -39,32 +39,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Instructions:
+* Data for this app is provided by [API movie search endpoint](https://developers.themoviedb.org/3/search/search-movies)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Requirements:
+* `App`: Your main component.
+* `Header`: The top header of the app, includes a search form. It has an input on it, so it's probably stateful.
+* `Movie`: A component that represents each of the movies retrieved from the TMDB API. Does this need to be stateful? Seems like all it does is display information...
+## Functionality
+1. Users are presented with a list of movies returned by a TMDB API call relative to their search
+  1. Only the first page of movies need to be displayed
+  1. The picture used for the movies is the poster_path. Refer to the [documentation](https://developers.themoviedb.org/3/getting-started/images) to learn how to get the full path
+  1.If no image is available, use the provided image. This image can be placed in the public folder and accessed with the relative file path of `image-not-available.jpg`.
+1. Users can search for movies using the search form at the top of the page
+  1. The input should be cleared after the search is performed
+  1. The input should be a controlled component
