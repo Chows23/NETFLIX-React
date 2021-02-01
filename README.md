@@ -48,9 +48,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 * `Movie`: A component that represents each of the movies retrieved from the TMDB API. Does this need to be stateful? Seems like all it does is display information...
 ## Functionality
 1. Users are presented with a list of movies returned by a TMDB API call relative to their search
-  1. Only the first page of movies need to be displayed
-  1. The picture used for the movies is the poster_path. Refer to the [documentation](https://developers.themoviedb.org/3/getting-started/images) to learn how to get the full path
-  1.If no image is available, use the provided image. This image can be placed in the public folder and accessed with the relative file path of `image-not-available.jpg`.
+   1. Only the first page of movies need to be displayed
+   1. The picture used for the movies is the poster_path. Refer to the [documentation](https://developers.themoviedb.org/3/getting-started/images) to learn how to get the full path
+   1.If no image is available, use the provided image. This image can be placed in the public folder and accessed with the relative file path of `image-not-available.jpg`.
 1. Users can search for movies using the search form at the top of the page
-  1. The input should be cleared after the search is performed
-  1. The input should be a controlled component
+   1. The input should be cleared after the search is performed
+   1. The input should be a controlled component
