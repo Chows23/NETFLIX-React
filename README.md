@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+Check out the webiste [here](https://chows23.github.io/NETFLIX-React/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
