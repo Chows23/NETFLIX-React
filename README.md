@@ -1,5 +1,10 @@
 Check out the webiste [here](https://chows23.github.io/NETFLIX-React/)
 
+Try to type some movie's keyword. The searh words will filter out the result of movie. The main result is grabing out the API of movie's name or movie's description.
+
+<img width="897" alt="23" src="https://user-images.githubusercontent.com/71317442/203139748-370be9ec-47c2-4075-b0d1-eacc700f2e82.png">
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
